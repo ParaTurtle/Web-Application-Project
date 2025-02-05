@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Parallax Site</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  Hello world
+  <nav class="navbar">
+    <div class="logo">ParallaxDemo</div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="parallax-element"></div>
+    <h1>Welcome to the Future</h1>
+    <p>Scroll to explore</p>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About Us</h2>
+    <div class="parallax-card">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </section>
+
+  <section id="services" class="content-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Service 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="service-card">
+        <h3>Service 2</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      </div>
+      <div class="service-card">
+        <h3>Service 3</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button>Send Message</button>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 
